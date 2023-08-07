@@ -1,0 +1,28 @@
+{
+  "contract": {
+    "address": "0x5FC8d32690cc91D4c39d9d3abcBD16989F875707",
+    "signerAddress": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+    "abi": [
+      "constructor() nonpayable",
+      "event CampaignAmountWithdraw(uint256 campaignId, uint256 goalAmount, uint256 timestamp)",
+      "event CampaignStarted(address indexed beneficiary, uint256 goalAmount, uint256 deadline, uint256 timestamp)",
+      "event Contribution(address indexed contributor, uint256 indexed campaignId, uint256 amount, uint256 timestamp)",
+      "event GoalAchieved(uint256 indexed campaignId, uint256 goalAmount, uint256 amountCollected, uint256 timestamp)",
+      "event OwnerPoolWithdraw(uint256 amount, uint256 timestamp)",
+      "event Refund(address indexed contributor, uint256 indexed campaignId, uint256 refundAmount, uint256 timestamp)",
+      "function claimRefund(uint256 _campaignId)",
+      "function fundCampaign(uint256 _campaignId) payable",
+      "function getCampaignBeneficiary(uint256 _campaignId) view returns (address)",
+      "function getCampaignDeadline(uint256 _campaignId) view returns (uint256)",
+      "function getCampaignGoal(uint256 _campaignId) view returns (uint256)",
+      "function getOwner() view returns (address)",
+      "function getTotalAmountCollected(uint256 _campaignId) view returns (uint256)",
+      "function isContributor(uint256 _campaignId) view returns (bool)",
+      "function isDeadlineEnded(uint256 _campaignId) view returns (bool)",
+      "function isGoalAchieved(uint256 _campaignId) view returns (bool)",
+      "function startCampaign(address _beneficiary, uint256 _goal, uint256 _deadline)",
+      "function withdrawAmount(uint256 _campaignId)",
+      "function withdrawOwnerPool()"
+    ]
+  }
+}
